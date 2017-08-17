@@ -31,7 +31,7 @@
     "run-sequence": "^1.2.2"
   },
   "dependencies": {
-    "getbase": "^3.5.0"
+    "getbase": "^3.5.1"
   },
   "browserslist": [
     "> 1%",

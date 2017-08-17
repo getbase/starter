@@ -11,6 +11,8 @@ Once you have cloned the repo, run the following:
 
     npm install && npm start
 
+Once you have your project running, head over to the [docs](http://getbase.org/docs/) to learn more.
+
 * * *
 
 ## License
