@@ -1,6 +1,11 @@
 # Base Starter Change Log
 
 
+## [1.0.2] - 2017-08-17
+### Base Starter V1.0.2
+- Updated readme installation instructions
+
+
 ## [1.0.1] - 2017-08-17
 ### Base Starter V1.0.1
 - Updated jQuery with unminified version

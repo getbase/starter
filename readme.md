@@ -5,9 +5,9 @@
 ## Installation
 Getting started is easy, simply clone this repo:
 
-    https://github.com/matthewhartman/base-starter.git
+    git clone git@github.com:matthewhartman/base-starter.git your-website && cd your-website && rm -rf .git
 
-Once you have cloned the repo, `cd` into it and run the following:
+Once you have cloned the repo, run the following:
 
     npm install && npm start
 
