@@ -1,6 +1,11 @@
 # Base Starter Change Log
 
 
+## [1.0.3] - 2017-08-17
+### Base Starter V1.0.3
+- Updated github clone url
+
+
 ## [1.0.2] - 2017-08-17
 ### Base Starter V1.0.2
 - Updated readme installation instructions

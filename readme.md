@@ -5,7 +5,7 @@
 ## Installation
 Getting started is easy, simply clone this repo:
 
-    git clone git@github.com:matthewhartman/base-starter.git your-website && cd your-website && rm -rf .git
+    git clone https://github.com/matthewhartman/base-starter.git your-website && cd your-website && rm -rf .git
 
 Once you have cloned the repo, run the following:
 
