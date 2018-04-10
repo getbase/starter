@@ -1,30 +1,30 @@
 'use strict';
 
-var browserSync = require('browser-sync').create(),
-    del = require('del'),
-    gulp = require('gulp'),
-    autoprefixer = require('gulp-autoprefixer'),
-    cache = require('gulp-cache'),
-    cssBase64 = require('gulp-css-base64'),
-    imagemin = require('gulp-imagemin'),
-    inlinesource = require('gulp-inline-source'),
-    notify = require('gulp-notify'),
-    sass = require('gulp-sass'),
-    sourcemaps = require('gulp-sourcemaps'),
-    uglify = require('gulp-uglify'),
-    path = require('path'),
-    runSequence = require('run-sequence');
+let browserSync = require('browser-sync').create();
+let path = require('path');
+let del = require('del');
+let gulp = require('gulp');
+let autoprefixer = require('gulp-autoprefixer');
+let cache = require('gulp-cache');
+let cssBase64 = require('gulp-css-base64');
+let imagemin = require('gulp-imagemin');
+let inlinesource = require('gulp-inline-source');
+let notify = require('gulp-notify');
+let sass = require('gulp-sass');
+let sourcemaps = require('gulp-sourcemaps');
+let uglify = require('gulp-uglify');
+let runSequence = require('run-sequence');
 
-// Task to compile SCSS
-gulp.task('sass', function () {
+// Compile SCSS
+gulp.task('sass', () => {
   return gulp.src('./src/scss/styles.scss')
     .pipe(sourcemaps.init())
     .pipe(sass({
-      outputStyle: 'nested', // Accepted values: nested, expanded, compact, compressed
+      outputStyle: 'nested',
       errLogToConsole: false,
       paths: [path.join(__dirname, 'scss', 'includes')]
     })
-      .on("error", notify.onError(function (error) {
+      .on("error", notify.onError(error => {
         return "Failed to Compile SCSS: " + error.message;
       })))
     .pipe(cssBase64())
@@ -39,15 +39,15 @@ gulp.task('sass', function () {
     }));
 });
 
-// Task to Minify JS
-gulp.task('jsmin', function () {
+// Minify JS
+gulp.task('jsmin', () => {
   return gulp.src('./src/js/**/*.js')
     .pipe(uglify())
     .pipe(gulp.dest('./dist/js/'));
 });
 
 // Minify Images
-gulp.task('imagemin', function () {
+gulp.task('imagemin', () => {
   return gulp.src('./src/img/**/*.+(png|jpg|jpeg|gif|svg)')
     // Caching images that run through imagemin
     .pipe(cache(imagemin({
@@ -56,8 +56,8 @@ gulp.task('imagemin', function () {
     .pipe(gulp.dest('./dist/img/'));
 });
 
-// BrowserSync Task (Live reload)
-gulp.task('browserSync', function () {
+// BrowserSync (Live Reload)
+gulp.task('browserSync', () => {
   browserSync.init({
     server: {
       baseDir: "./src/"
@@ -65,31 +65,31 @@ gulp.task('browserSync', function () {
   });
 });
 
-// Gulp Inline Source Task
+// Gulp Inline Source
 // Embed scripts, CSS or images inline (make sure to add an inline attribute to the linked files)
 // Eg: <script src="default.js" inline></script>
 // Will compile all inline within the html file (less http requests - woot!)
-gulp.task('inlinesource', function () {
+gulp.task('inlinesource', () => {
   return gulp.src('./src/**/*.html')
     .pipe(inlinesource())
     .pipe(gulp.dest('./dist/'));
 });
 
-// Gulp Watch Task
-gulp.task('watch', ['browserSync'], function () {
+// Gulp Watch
+gulp.task('watch', ['browserSync'], () => {
   gulp.watch('./src/scss/**/*', ['sass']);
   gulp.watch('./src/**/*.html').on('change', browserSync.reload);
 });
 
-// Gulp Clean Up Task
-gulp.task('clean', function () {
+// Gulp Clean Up
+gulp.task('clean', () => {
   return del('dist');
 });
 
-// Gulp Default Task
+// Gulp Default
 gulp.task('default', ['watch']);
 
 // Gulp Build Task
-gulp.task('build', function (callback) {
+gulp.task('build', callback => {
   runSequence('clean', 'sass', 'imagemin', 'jsmin', 'inlinesource', callback);
 });
