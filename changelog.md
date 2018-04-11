@@ -1,27 +1,8 @@
 # Base Starter Change Log
 
-
-## [1.0.4] - 2017-08-18
-### Base Starter V1.0.4
-- Version bump on base
-- Minor updates to readme
-
-## [1.0.3] - 2017-08-17
-### Base Starter V1.0.3
-- Updated github clone url
-
-
-## [1.0.2] - 2017-08-17
-### Base Starter V1.0.2
-- Updated readme installation instructions
-
-
-## [1.0.1] - 2017-08-17
-### Base Starter V1.0.1
-- Updated jQuery with unminified version
-- Fixed link to jQuery in index.html
-
-
-## [1.0.0] - 2017-08-17
-### Base Starter V1.0.0
-- Added initial template with gulp js config
+## [2.0.0] - 2018-04-11
+### Base Starter V2.0.0
+- Updated html template
+- Updated all favicons
+- Bumped all dependencies within package.json
+- Updated readme and changelog
