@@ -11,7 +11,6 @@ Start your web / app projects right away. Spend less time with setup and focus m
 * [Overview](#overview)
 * [Installation](#installation)
 * [Documentation](#documentation)
-* [Modules and Components](#modules-and-components)
 * [Support](#support)
 * [Authors](#authors)
 * [License](#license)
