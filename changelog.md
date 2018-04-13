@@ -1,5 +1,9 @@
 # Base Starter Change Log
 
+## [4.0.3] - 2018-04-13
+### Base Starter V4.0.3
+- Added @getbase/animations within package.json
+
 ## [4.0.2] - 2018-04-13
 ### Base Starter V4.0.2
 - Updated order of imports in styles.scss

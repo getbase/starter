@@ -16,7 +16,8 @@
     "tests"
   ],
   "devDependencies": {
-    "@getbase/base": "4.0.4",
+    "@getbase/animations": "4.0.0",
+    "@getbase/base": "4.0.5",
     "@getbase/buttons": "4.0.0",
     "@getbase/containers": "4.0.0",
     "@getbase/forms": "4.0.0",
