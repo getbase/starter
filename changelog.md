@@ -1,5 +1,10 @@
 # Base Starter Change Log
 
+## [4.0.5] - 2018-04-17
+### Base Starter V4.0.5
+- Added @getbase/layout-spacers within package.json
+- Bumped package versions in package.json
+
 ## [4.0.4] - 2018-04-16
 ### Base Starter V4.0.4
 - Updated SCSS import order
