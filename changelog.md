@@ -1,5 +1,9 @@
 # Base Starter Change Log
 
+## [4.0.7] - 2018-04-19
+### Base Starter V4.0.7
+- Commment out @getbase/micro-grid within styles.scss as it's optional
+
 ## [4.0.6] - 2018-04-19
 ### Base Starter V4.0.6
 - Added @getbase/micro-grid within package.json
