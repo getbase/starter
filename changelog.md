@@ -1,5 +1,11 @@
 # Base Starter Change Log
 
+## [4.0.6] - 2018-04-19
+### Base Starter V4.0.6
+- Added @getbase/micro-grid within package.json
+- Added @getbase/micro-grid to styles.scss
+- Bumped package versions in package.json
+
 ## [4.0.5] - 2018-04-17
 ### Base Starter V4.0.5
 - Added @getbase/layout-spacers within package.json
