@@ -1,5 +1,11 @@
 # Base Starter Change Log
 
+## [4.0.8] - 2018-04-29
+### Base Starter V4.0.8
+- Added babel dev dependencies
+- Updated JS task in Gulpjs
+- Bumped package versions in package.json
+
 ## [4.0.7] - 2018-04-19
 ### Base Starter V4.0.7
 - Commment out @getbase/micro-grid within styles.scss as it's optional

@@ -14,6 +14,7 @@ let sass = require('gulp-sass');
 let sourcemaps = require('gulp-sourcemaps');
 let uglify = require('gulp-uglify');
 let runSequence = require('run-sequence');
+let babel = require('gulp-babel');
 
 // Compile SCSS
 gulp.task('sass', () => {
@@ -39,12 +40,15 @@ gulp.task('sass', () => {
     }));
 });
 
-// Minify JS
-gulp.task('jsmin', () => {
-  return gulp.src('./src/js/**/*.js')
-    .pipe(uglify())
-    .pipe(gulp.dest('./dist/js/'));
-});
+// Babelify and Minify JS
+gulp.task('js', () =>
+  gulp.src('src/js/**/*.js')
+  .pipe(babel({
+    presets: ['env']
+  }))
+  .pipe(uglify())
+  .pipe(gulp.dest('dist/js/'))
+);
 
 // Minify Images
 gulp.task('imagemin', () => {
@@ -91,5 +95,5 @@ gulp.task('default', ['watch']);
 
 // Gulp Build Task
 gulp.task('build', callback => {
-  runSequence('clean', 'sass', 'imagemin', 'jsmin', 'inlinesource', callback);
+  runSequence('clean', 'sass', 'imagemin', 'js', 'inlinesource', callback);
 });
