@@ -49,5 +49,8 @@
     "> 1%",
     "last 2 versions",
     "Firefox ESR"
-  ]
+  ],
+  "dependencies": {
+    "gulp-htmlmin": "^4.0.0"
+  }
 }

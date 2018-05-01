@@ -1,5 +1,11 @@
 # Base Starter Change Log
 
+## [4.0.9] - 2018-05-01
+### Base Starter V4.0.9
+- Added htmlmin dev dependencies
+- Added task in Gulpjs to minify HTML
+- Removed Google Analytics from index.html template
+
 ## [4.0.8] - 2018-04-29
 ### Base Starter V4.0.8
 - Added babel dev dependencies
