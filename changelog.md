@@ -1,5 +1,9 @@
 # Base Starter Change Log
 
+## [4.1.2] - 2018-12-19
+### Base Starter V4.1.2
+- Removed redundant package
+
 ## [4.1.1] - 2018-12-18
 ### Base Starter V4.1.1
 - Updated Readme
