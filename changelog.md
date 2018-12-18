@@ -1,5 +1,9 @@
 # Base Starter Change Log
 
+## [4.1.1] - 2018-12-18
+### Base Starter V4.1.1
+- Updated Readme
+
 ## [4.1.0] - 2018-12-18
 ### Base Starter V4.1.0
 - Replaced Gulpjs with Webpack
