@@ -1,5 +1,9 @@
 # Base Starter Change Log
 
+## [4.1.3] - 2019-01-02
+### Base Starter V4.1.3
+- Added file loaders for fonts
+
 ## [4.1.2] - 2018-12-19
 ### Base Starter V4.1.2
 - Removed redundant package
