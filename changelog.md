@@ -1,5 +1,9 @@
 # Base Starter Change Log
 
+## [5.0.1] - 2020-05-01
+### Base Starter V5.0.1
+- Updated package.json to use latest Base
+
 ## [5.0.0] - 2020-05-01
 ### Base Starter V5.0.0
 - Moved from webpack to Parcel JS

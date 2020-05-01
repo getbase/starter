@@ -15,7 +15,7 @@
     }
   },
   "dependencies": {
-    "@getbase/base": "^5.0.0-alpha7"
+    "@getbase/base": "^5.0.2"
   },
   "devDependencies": {
     "autoprefixer": "^9.7.6",
