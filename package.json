@@ -15,7 +15,7 @@
     }
   },
   "dependencies": {
-    "@getbase/base": "^5.0.2"
+    "@getbase/base": "^5.0.3"
   },
   "devDependencies": {
     "autoprefixer": "^9.7.6",
@@ -24,7 +24,7 @@
   },
   "scripts": {
     "start": "NODE_ENV=development parcel src/index.html --open",
-    "build": "NODE_ENV=production rm -rf dist && parcel build --no-content-hash src/index.html",
+    "build": "NODE_ENV=production rm -rf dist && parcel build --no-content-hash src/index.html --public-url ./ --out-dir ./dist",
     "clean": "rm -rf dist"
   }
 }
