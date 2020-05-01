@@ -1,6 +1,6 @@
 # [Base Starter](http://getbase.org)
 
-### A Rock Solid, Starter template that includes the base CSS framework and other goodies.
+### A Rock Solid, Starter template that includes the Base CSS framework and other goodies.
 
 Start your web / app projects right away. Spend less time with setup and focus more time on writing beautiful styles.
 
@@ -19,7 +19,7 @@ Start your web / app projects right away. Spend less time with setup and focus m
 
 ## Overview
 
-Base starter includes a basic index.html template, along with favicons and basic styles.
+Base starter includes a basic index.html template, along with favicons and base styles.
 
 * * *
 
@@ -28,7 +28,7 @@ Base starter includes a basic index.html template, along with favicons and basic
 Getting started is easy, simply clone the repo and run the project
 
 ```bash
-git clone https://github.com/matthewhartman/base-starter.git your-website \
+git clone git@github.com:getbase/starter.git --depth=1 your-website \
 && cd your-website && rm -rf .git && npm i && npm start
 ```
 
@@ -36,9 +36,9 @@ git clone https://github.com/matthewhartman/base-starter.git your-website \
 
 ## Documentation
 
-Base starter includes the latest version of Base and Base Modules to get you started.
+Base starter includes the latest version of Base to get you started.
 
-Base starter has a powerful Webpack config which compiles SCSS with live reload support, optimises images minifies CSS/JS and inlines CSS/JS code.
+Base starter is powered by ParcelJS which compiles SCSS with live reload support, optimises images, compiles and minifies CSS/JS.
 
 There are a series of npm scripts that can perform all the above tasks in a single action. Below is a list of all the npm scripts within the Base Starter package.json.
 
@@ -47,7 +47,7 @@ There are a series of npm scripts that can perform all the above tasks in a sing
 | `npm start` | Starts up a web server and watches for HTML, SCSS and JS changes within `/src` |
 | `npm run build` | The build task optmises your website for production |
 
-If you would like to learn more about Base and the Base Modules, head over to the [main documentation](https://github.com/getbase/base#documentation).
+If you would like to learn more about Base, head over to the [Base website](https://getbase.org).
 
 * * *
 
@@ -61,8 +61,8 @@ If you would like to learn more about Base and the Base Modules, head over to th
 
 #### Matthew Hartman
 
-* [https://twitter.com/matthewhartmans](https://twitter.com/matthewhartmans)
 * [https://github.com/matthewhartman](https://github.com/matthewhartman)
+* [https://twitter.com/matthewhartmans](https://twitter.com/matthewhartmans)
 
 * * *
 

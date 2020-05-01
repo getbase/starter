@@ -1,0 +1,1 @@
+{"version":3,"sources":["js/default.js"],"names":["console","log"],"mappings":";AACAA,QAAQC,IAAI","file":"default.fe761c5a.js","sourceRoot":"../src","sourcesContent":["// Default Javascript File\nconsole.log('Base starter, ready to rock and roll!');"]}

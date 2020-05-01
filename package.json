@@ -1,59 +1,30 @@
 {
-  "scripts": {
-    "start": "./node_modules/.bin/cross-env webpack-dev-server --hot --inline --mode development --config webpack.dev.config.js",
-    "build": "./node_modules/.bin/cross-env webpack --mode production"
-  },
-  "authors": [
-    "Matthew Hartman <matthewhartmanau@gmail.com>"
-  ],
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-  "devDependencies": {
-    "@babel/core": "^7.2.2",
-    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
-    "@babel/preset-env": "^7.2.0",
-    "@getbase/animations": "^4.1.0",
-    "@getbase/base": "^4.1.0",
-    "@getbase/buttons": "^4.1.0",
-    "@getbase/containers": "^4.1.0",
-    "@getbase/forms": "^4.1.0",
-    "@getbase/grid": "^4.1.0",
-    "@getbase/layout-helpers": "^4.1.0",
-    "@getbase/layout-spacers": "^4.1.0",
-    "@getbase/micro-grid": "^4.1.0",
-    "@getbase/tables": "^4.1.0",
-    "@getbase/typography": "^4.1.0",
-    "@getbase/typography-helpers": "^4.1.0",
-    "babel-loader": "^8.0.4",
-    "clean-webpack-plugin": "^1.0.0",
-    "copy-webpack-plugin": "^4.6.0",
-    "cross-env": "^5.2.0",
-    "css-loader": "^1.0.1",
-    "extract-text-webpack-plugin": "^4.0.0-alpha",
-    "file-loader": "^2.0.0",
-    "html-webpack-inline-source-plugin": "0.0.10",
-    "html-webpack-plugin": "^3.2.0",
-    "html-webpack-reload-plugin": "^2.0.0",
-    "image-webpack-loader": "^4.6.0",
-    "imagemin-pngcrush": "^6.0.0",
-    "node-sass": "^4.10.0",
-    "sass-loader": "^7.1.0",
-    "style-loader": "^0.23.1",
-    "uglifyjs-webpack-plugin": "2.0.1",
-    "url-loader": "^1.1.2",
-    "webpack": "^4.26.0",
-    "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.10",
-    "webpack-livereload-plugin": "^2.1.1"
-  },
+  "name": "base-starter",
+  "description": "Base Starter - A Rock Solid, Starter template that includes the Base CSS framework and modules to get you started on your next app or website.",
+  "author": "Matthew Hartman <matthewhartmanau@gmail.com>",
+  "version": "5.0.0",
   "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "Firefox ESR"
-  ]
+    ">1%",
+    "last 4 versions",
+    "Firefox ESR",
+    "ie >= 10"
+  ],
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "dependencies": {
+    "@getbase/base": "^5.0.0-alpha7"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.7.6",
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.26.5"
+  },
+  "scripts": {
+    "start": "NODE_ENV=development parcel src/index.html --open",
+    "build": "NODE_ENV=production rm -rf dist && parcel build --no-content-hash src/index.html",
+    "clean": "rm -rf dist"
+  }
 }

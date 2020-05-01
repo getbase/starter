@@ -1,5 +1,10 @@
 # Base Starter Change Log
 
+## [5.0.0] - 2020-05-01
+### Base Starter V5.0.0
+- Moved from webpack to Parcel JS
+- Updated favicons
+
 ## [4.1.3] - 2019-01-02
 ### Base Starter V4.1.3
 - Added file loaders for fonts
